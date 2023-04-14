@@ -396,11 +396,14 @@ body {
 
 .projects-card {
     flex-basis: calc((100% - 48px) / 3);
+}
+
+.projects-link {
     display: block;
 }
 
-.projects-card:hover,
-.projects-card:focus {
+.projects-link:hover,
+.projects-link:focus {
     box-shadow:
         0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
