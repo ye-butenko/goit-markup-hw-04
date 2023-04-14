@@ -356,9 +356,7 @@ body {
     align-items: center;
     width: 168px;
     height: 88px;
-    /* після автоперевірки, я зміню це значення, 
-    тому що за макетом має бути #8E8F99; */
-    color: #AFB1B8;
+    color: var(--color-light-slate);
     border: 1px solid var(--color-light-slate);
     border-radius: 4px;
 }
