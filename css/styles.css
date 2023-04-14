@@ -427,10 +427,18 @@ body {
     width: 264px;
 }
 
+.footer-social {
+    width: 208px;
+}
+
 .footer-social-text {
     font-family: inherit;
     font-weight: 500;
     margin-bottom: 16px;
+}
+
+.footer-social-list {
+    gap: 16px;
 }
 
 .footer .social-link:hover,
