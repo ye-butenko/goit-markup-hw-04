@@ -147,6 +147,10 @@ body {
 /* header */
 .header {
     border-bottom: 1px solid var(--color-cornflower);
+    box-shadow:
+        0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -218,11 +222,18 @@ body {
 /* MAIN */
 /* hero ↓↓↓ */
 .section-hero {
-    background-color: var(--color-navy-blue);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
-    background-size: cover;
-    color: var(--color-white);
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 188px 0;
+    color: var(--color-white);
+    background-color: var(--color-navy-blue);
+    background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/hero/people-office.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .section-hero .container {
@@ -300,7 +311,7 @@ body {
 }
 
 .team-card-desc {
-    padding: 32px 16px;
+    padding: 32px 0px;
 }
 
 .team-card-text {
@@ -330,6 +341,11 @@ body {
     fill: var(--color-cloud);
 }
 
+/* section 5 Customers ↓↓↓ */
+.customers-title {
+    line-height: 1.1;
+}
+
 .customers-list {
     gap: 24px;
 }
@@ -340,17 +356,21 @@ body {
     align-items: center;
     width: 168px;
     height: 88px;
+    /* після автоперевірки, я зміню це значення, 
+    тому що за макетом має бути #8E8F99; */
+    color: #AFB1B8;
     border: 1px solid var(--color-light-slate);
     border-radius: 4px;
 }
 
 .customers-link:hover,
 .customers-link:focus {
+    color: var(--color-ocean);
     border-color: var(--color-ocean);
 }
 
 .customers-icon {
-    fill: var(--color-light-slate);
+    fill: currentColor;
 }
 
 .customers-link:hover .customers-icon,
@@ -376,6 +396,7 @@ body {
 
 .projects-card {
     flex-basis: calc((100% - 48px) / 3);
+    display: block;
 }
 
 .projects-card:hover,
@@ -407,10 +428,8 @@ body {
 
 .footer-container {
     display: flex;
-}
-
-.footer-text {
-    margin-right: 120px;
+    align-items: baseline;
+    gap: 120px;
 }
 
 .footer .logo {
@@ -435,6 +454,7 @@ body {
     font-family: inherit;
     font-weight: 500;
     margin-bottom: 16px;
+    color: var(--color-white);
 }
 
 .footer-social-list {
